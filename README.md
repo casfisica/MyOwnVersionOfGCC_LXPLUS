@@ -13,7 +13,7 @@ how to use your own version of gcc compilers on a server like lxplus, where you 
 
 ```bash
 wget http://gfortran.meteodat.ch/download/x86_64/snapshots/gcc-4.9-20160803.tar.xz
-tar xvf cc-4.9-20160803.tar.xz
+tar xvf gcc-4.9-20160803.tar.xz
 NEWFORTRANPATH="$(pwd)"
 
 cat <<EOT >> CONFIGNEWFORTRAN.sh 
