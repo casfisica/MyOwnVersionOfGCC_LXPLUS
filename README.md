@@ -19,7 +19,7 @@ NEWFORTRANPATH="$(pwd)"
 cat <<EOT >> CONFIGNEWFORTRAN.sh 
 #!/bin/sh
 
-export PATH=/afs/cern.ch/user/c/csalazar/HEPTools/Fortran/gcc-4.9/bin:$PATH
+export PATH=$NEWFORTRANPATH/gcc-4.9/bin:$PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
     LD_LIBRARY_PATH="$NEWFORTRANPATH/gcc-4.9/lib64"
@@ -31,7 +31,7 @@ if [ -z "$LD_LIBRARY_PATH" ]; then
 
 EOT
 ```
-par>And when you want to use it, just source the config script</par>
+<par>And when you want to use it, just source the config script</par>
 
 
 ```bash
