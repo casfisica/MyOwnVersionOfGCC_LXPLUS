@@ -27,8 +27,6 @@ if [ -z "$LD_LIBRARY_PATH" ]; then
     LD_LIBRARY_PATH="$NEWFORTRANPATH/gcc-4.9/lib64:$LD_LIBRARY_PATH"
   fi
   export LD_LIBRARY_PATH
-
-
 EOT
 ```
 <par>And when you want to use it, just source the config script</par>
